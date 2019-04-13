@@ -1,9 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Footer from '../../Footer'
+import Navbar from '../../Navbar'
 // import './all.sass'
-import useSiteMetadata from './SiteMetadata'
+import useSiteMetadata from '../../SiteMetadata'
+import GlobalStyle from '../..GlobalStyles'
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -43,6 +44,8 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
+
+        <GlobalStyle />
       </Helmet>
       <Navbar />
       <div>{children}</div>

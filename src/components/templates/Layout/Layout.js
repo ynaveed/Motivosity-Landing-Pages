@@ -1,13 +1,13 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import Footer from '../../Footer'
-import Navbar from '../../Navbar'
+import React from 'react';
+import Helmet from 'react-helmet';
+import Footer from '../../Footer';
+import Navbar from '../../Navbar';
 // import './all.sass'
-import useSiteMetadata from '../../SiteMetadata'
-import GlobalStyle from '../..GlobalStyles'
+import useSiteMetadata from '../../SiteMetadata';
+import GlobalStyle from '../..GlobalStyles';
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata()
+  const { title, description } = useSiteMetadata();
   return (
     <div>
       <Helmet>
@@ -47,11 +47,11 @@ const TemplateWrapper = ({ children }) => {
 
         <GlobalStyle />
       </Helmet>
-      <Navbar />
+      {/* <Navbar /> */}
       <div>{children}</div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
-  )
-}
+  );
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;

@@ -1,0 +1,4 @@
+public/
+static/admin/*.bundle.*
+node_modules/
+.cache/

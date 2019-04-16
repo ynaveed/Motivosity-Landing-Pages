@@ -4,11 +4,23 @@ import { graphql } from 'gatsby';
 import Layout from '../Layout';
 import Content, { HTMLContent } from '../Content';
 import TierTwoBanner from '../templates/TierTwoBanner/TierTwoBanner';
+import { Grid, GridCell } from '../atoms/Structure/Structure';
+import { TwoColumn } from '../molecules/TwoColumn/TwoColumn';
 
-export const AboutUsTemplate = ({ title, content, contentComponent }) => {
+export const AboutUsTemplate = ({
+  title,
+  content,
+  contentComponent,
+  section,
+}) => {
   const PageContent = contentComponent || Content;
 
-  return <TierTwoBanner title={title} />;
+  return (
+    <React.Fragment>
+      <TierTwoBanner title={title} />
+      {/* <TwoColumn /> */}
+    </React.Fragment>
+  );
 };
 
 AboutUsTemplate.propTypes = {
@@ -26,6 +38,7 @@ const AboutUs = ({ data }) => {
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
         content={post.html}
+        section={post.frontmatter.section}
       />
     </Layout>
   );
@@ -43,6 +56,12 @@ export const aboutUsQuery = graphql`
       html
       frontmatter {
         title
+        section {
+          title
+          descriptionOne
+          ceoMessage
+          descriptionTwo
+        }
       }
     }
   }

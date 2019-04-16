@@ -29,11 +29,9 @@ const GlobalStyle = createGlobalStyle`
       font-style: normal;
     }
     html {
-        color: ${color('text')};
-        font-family: ${fromTheme('fontFamily')};
+        font-family: "Lato", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif ;
         font-size: ${(BASE_FONT_SIZE / assumedBrowserDefaultFontSize) * 100}%;
-        font-weight: ${fromTheme('fontWeight', 'regular')};
-        line-height: ${fromTheme('lineHeight', 'text')};
+        font-weight: normal;
     }
     *, *::before, *::after {
         margin: 0;

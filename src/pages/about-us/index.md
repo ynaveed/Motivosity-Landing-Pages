@@ -11,6 +11,7 @@ section:
       Scott Johnson Founder & CEO. Motivosity
     descriptionTwo: >
       We're called "MVers” [moovers] and yes, we’re a small group of people who aim to move the world. Each one of us at Motivosity is here primarily because they care improving the value of the workplace in people's lives.
+    image: /img/our-mission.png
 ---
 **This is the body**
 

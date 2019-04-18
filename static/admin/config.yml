@@ -49,7 +49,7 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-us"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Woho", name: "woho", widget: "string"}
-          - {label: "First Section", name: "firstsection", widget: object, fields: [{label: "title", name: "title", widget: "string"}, {label: "description One", name: "description-one", widget: "string"}, {label: "ceoMessage", name: "ceo_message", widget: "string"}, {label: "descriptionTwo", name: "description-two", widget: "string"}]}
+          - {label: "First Section", name: "section", widget: object, fields: [{label: "title", name: "title", widget: "string"}, {label: "description One", name: "description_one", widget: "string"}, {label: "ceoMessage", name: "ceo_message", widget: "string"}, {label: "descriptionTwo", name: "description_two", widget: "string"}, {label: Image, name: image, widget: image}]}
           - {label: "Body", name: "body", widget: "markdown"}
       - file: "src/pages/products/index.md"
         label: "Products Page"

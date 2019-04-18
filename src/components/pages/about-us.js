@@ -4,8 +4,12 @@ import { graphql } from 'gatsby';
 import Layout from '../Layout';
 import Content, { HTMLContent } from '../Content';
 import TierTwoBanner from '../templates/TierTwoBanner/TierTwoBanner';
-import { Grid, GridCell } from '../atoms/Structure/Structure';
-import { TwoColumn } from '../molecules/TwoColumn/TwoColumn';
+
+import PreviewCompatibleImage from '../PreviewCompatibleImage';
+
+const FirstSection = ({ sectionData }) => {
+  return '';
+};
 
 export const AboutUsTemplate = ({
   title,
@@ -14,11 +18,11 @@ export const AboutUsTemplate = ({
   section,
 }) => {
   const PageContent = contentComponent || Content;
-
+  console.log(section);
   return (
     <React.Fragment>
-      <TierTwoBanner title={title} />
-      {/* <TwoColumn /> */}
+      {/* <TierTwoBanner title={title} /> */}
+      {/* <FirstSection sectionData={section} /> */}
     </React.Fragment>
   );
 };
@@ -58,9 +62,16 @@ export const aboutUsQuery = graphql`
         title
         section {
           title
-          descriptionOne
-          ceoMessage
-          descriptionTwo
+          description_one
+          ceo_message
+          description_two
+          image {
+            childImageSharp {
+              fluid(maxWidth: 460, quality: 85) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }

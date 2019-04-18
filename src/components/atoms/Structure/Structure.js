@@ -57,6 +57,12 @@ const flexStyles = css`
       justify-content: space-between;
     `
   )};
+  ${ifProp(
+    'no-basis',
+    css`
+      flex: 1 1 0;
+    `
+  )};
 `;
 
 export const Grid = styled.div`

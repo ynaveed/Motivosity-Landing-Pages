@@ -62,9 +62,9 @@ body { font-weight: 300;font-family: "Lato", "HelveticaNeue", "Helvetica Neue", 
 @font-face {
 	font-family: 'motivosity';
 	src:
-			url('../resources/fonts/motivosity.ttf?800214') format('truetype'),
-			url('../resources/fonts/motivosity.woff?800214') format('woff'),
-			url('../resources/fonts/motivosity.svg?800214#motivosity') format('svg');
+			url('../resources/fonts/motivosity.ttf') format('truetype'),
+			url('../resources/fonts/motivosity.woff') format('woff'),
+			url('../resources/fonts/motivosity.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -441,7 +441,7 @@ Icons
 .icon-send:before { 	content: "\e60d"; }
 .icon-settings:before { 	content: "\e612"; }
 .icon-shovel:before { 	content: "\e00c"; }
-.icon-smile:before { 	content: "\e900"; }
+.icon-smile:before { padding-bottom: 10px; 	content: "\e900"; }
 .icon-sort:before { 	content: "\f0dc"; }
 .icon-sphere:before { 	content: "\e9c9"; }
 .icon-star:before { 	content: "\e002"; }

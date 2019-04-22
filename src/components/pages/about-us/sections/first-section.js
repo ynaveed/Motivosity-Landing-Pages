@@ -22,10 +22,8 @@ const FirstSection = ({ sectionData }) => {
           </div>
           <div className="mission-quote">
             <blockquote cite="http://">
-              <p>
-                {sectionData.ceo_message}
-                <footer>{sectionData.ceo_name}</footer>
-              </p>
+              <p>{sectionData.ceo_message}</p>
+              <footer>{sectionData.ceo_name}</footer>
             </blockquote>
           </div>
           <div className="mission-text2">

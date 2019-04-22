@@ -8,6 +8,9 @@ import './style.scss';
 
 import FirstSection from './sections/first-section';
 import SecondSection from './sections/second-section';
+import Slider from './sections/slider';
+import ThirdSection from './sections/third-section';
+import FourthSection from './sections/fourth-section';
 
 export const AboutUsTemplate = ({
   title,
@@ -22,6 +25,9 @@ export const AboutUsTemplate = ({
       <TierTwoBanner title={title} icon="smile" />
       <FirstSection sectionData={section} />
       <SecondSection />
+      <Slider />
+      <ThirdSection />
+      <FourthSection />
     </React.Fragment>
   );
 };

@@ -5,7 +5,7 @@ h2{font-weight: 500}
 .about-mission{background-color: #FFFFFF;padding: 50px 0px 15px;}
 .about-mission .mission-wrapper{padding-left: 30px}
 .about-mission .mission-right{padding: 30px 0px 40px}
-.about-mission .mission-right img{width:460px;height:580px}
+.about-mission .mission-right .mission-image{width:460px;height:580px}
 .about-mission .mission-left div{margin-bottom: 40px}
 .about-mission .mission-left p{font-weight: 300;font-size: 1rem;}
 .about-mission blockquote{padding-left:40px;border-left: 5px solid #ADDDEE;position: relative;margin-left: 0;}
@@ -156,7 +156,7 @@ h2{font-weight: 500}
 .awards-line-3{border: solid 1px #DFE0E1;width: 310px;height: 75px;bottom: -106px;left: -330px;right: 0;margin: 0 auto;border-top-right-radius: 30px;border-left: none;border-bottom: none;position: absolute;;}
 
   @media screen and (max-width: 1200px){
-    .about-mission .mission-right img{width: 400px;height: 500px}
+    .about-mission .mission-right .mission-image {width: 400px;height: 500px}
     .about-mission .mission-left p,.about-history .history-right .history-text p,.about-awards-rec p{font-size: .875rem}
 
     .about-history .history-left .formula-text p{margin: 0}
@@ -202,7 +202,7 @@ h2{font-weight: 500}
     .about-history .history-left .about-number{margin: 0;}
     .about-history .history-left .formula-symbol{margin-bottom: 10px}
     .about-history .history-right{margin-top: 20px}
-    .about-mission .mission-right img{width: 300px;height: 400px}
+    .about-mission .mission-right .mission-image {width: 300px;height: 400px}
 
     .about-companies .company-item img{height:115px;}
 

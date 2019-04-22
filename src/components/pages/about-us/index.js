@@ -6,63 +6,8 @@ import Content, { HTMLContent } from '../../Content';
 import TierTwoBanner from '../../templates/TierTwoBanner';
 import './style.scss';
 
-import PreviewCompatibleImage from '../../PreviewCompatibleImage';
-
-const FirstSection = ({ sectionData }) => {
-  return (
-    <div class="about-mission">
-      <div className="grid center container mission-wrapper">
-        <div class="line-container">
-          <div className="mission-line-1" />
-          <div className="mission-line-2" />
-          <div className="mission-line-3" />
-          <div className="mission-line-4" />
-        </div>
-        <div className="grid-cell no-basis mission-left">
-          <div className="mission-title">
-            <h2>OUR MISSION</h2>
-          </div>
-          <div className="mission-text1">
-            <p>
-              Life is short and we spend a lot of our waking hours in the ofﬁce.
-              We think that life at work can and should be just as meaningful
-              and satisifying as life off the clock. Everything we do is
-              designed to lead to this end.
-            </p>
-          </div>
-          <div className="mission-quote">
-            <blockquote cite="http://">
-              <p>
-                “What I love about Motivosity, and why it's a unique experience
-                in my career, is that every day we get this huge amount of
-                appreciation from our customers and their employees. Every day
-                I'm grateful that we can do something that makes people happier
-                to be where they are"
-                <footer>Scott Johnson Founder & CEO. Motivosity</footer>
-              </p>
-            </blockquote>
-          </div>
-          <div className="mission-text2">
-            <p>
-              We're called "MVers” [moovers] and yes, we’re a small group of
-              people who aim to move the world. Each one of us at Motivosity is
-              here primarily because they care improving the value of the
-              workplace in people's lives.
-            </p>
-          </div>
-        </div>
-        <div className="grid-cell no-basis text-center mission-right">
-          <div className="mission-image">
-            <img
-              src="{{ pathToResources }}img/landingPages/about/our-mission.png"
-              alt="Our Mission"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+import FirstSection from './sections/first-section';
+import SecondSection from './sections/second-section';
 
 export const AboutUsTemplate = ({
   title,
@@ -75,7 +20,8 @@ export const AboutUsTemplate = ({
   return (
     <React.Fragment>
       <TierTwoBanner title={title} icon="smile" />
-      <FirstSection />
+      <FirstSection sectionData={section} />
+      <SecondSection />
     </React.Fragment>
   );
 };
@@ -117,6 +63,7 @@ export const aboutUsQuery = graphql`
           title
           description_one
           ceo_message
+          ceo_name
           description_two
           image {
             childImageSharp {

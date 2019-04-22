@@ -7,8 +7,8 @@ section:
     “What I love about Motivosity, and why it's a unique experience in my
     career, is that every day we get this huge amount of appreciation from our
     customers and their employees. Every day I'm grateful that we can do
-    something that makes people happier to be where they are"       Scott
-    Johnson Founder & CEO. Motivosity
+    something that makes people happier to be where they are
+  ceo_name: Scott Johnson Founder & CEO. Motivosity
   description_one: >-
     Life is short and we spend a lot of our waking hours in the ofﬁce. We think
     that life at work can and should be just as meaningful and satisifying as
